@@ -1,0 +1,24 @@
+{
+    "name": "Technical webshop",
+    "langItems": [
+        {"text": "Magyar", "sign": "hu"},
+        {"text": "English", "sign": "en"}
+    ],
+    "menu": [
+        {"text": "Home", "link": "home"},
+        {"text": "Stockpile", "link": "stockpile"}
+    ],
+    "welcome": "Welcome to the Technical Webshop page!",
+    "columns": [
+        {"key": "id", "text": "#", "type": "plain"},
+        {"key": "name", "text": "Name", "type": "text"},
+        {"key": "price", "text": "Price", "type": "number"},
+        {"key": "description", "text": "Description", "type": "textarea"},
+        {"key": "category", "text": "Category", "type": "text"}
+    ],
+    "operations": "Operations",
+    "add_button": "Add",
+    "update_button": "Update",
+    "delete_button": "Delete",
+    "made": "Made by BoBenc"
+}

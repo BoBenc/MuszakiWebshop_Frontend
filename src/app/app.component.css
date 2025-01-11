@@ -1,0 +1,20 @@
+::ng-deep .wrapper {
+    display: block;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.router {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+app-nav {
+    height: 10vh;
+    display: block;
+}
+
+app-footer {
+    height: 5vh;
+    display: block;
+}

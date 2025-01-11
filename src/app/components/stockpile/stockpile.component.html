@@ -1,0 +1,44 @@
+<!-- {{products|json}} -->
+<div class="row fw-bold mt-2">
+    <div class="col" *ngFor="let c of columns">{{c.text}}</div>
+    <div class="col">{{operations}}</div>
+</div>
+
+<div class="row my-3">
+    <div class="col" *ngFor="let c of columns">
+        <ng-container *ngIf="c.type == 'textarea'; else simainput">
+            <textarea [(ngModel)]="newProduct[c.key]" class="form-control"></textarea>
+        </ng-container>
+        <ng-template #simainput>
+            <input [(ngModel)]="newProduct[c.key]" [type]="c.type == 'number' ? 'number' : 'text'" step="0.01" class="form-control">
+        </ng-template>
+    </div>
+    <div class="col">
+        <button (click)="addProduct()" type="button" class="btn btn-primary">
+            {{add_button}}
+            <i class="bi bi-plus-circle"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row my-2" *ngFor="let product of products">
+    <div class="col" *ngFor="let c of columns">
+        <ng-container *ngIf="c.type == 'textarea'; else simainput">
+            <textarea [(ngModel)]="product[c.key]" class="form-control"></textarea>
+        </ng-container>
+        <ng-template #simainput>
+            <input [(ngModel)]="product[c.key]" [type]="c.type === 'number' ? 'number' : 'text'" step="0.01" class="form-control">
+        </ng-template>
+    </div>
+    <div class="col">
+        <button (click)="updateProduct(product)" type="button" class="btn btn-warning">
+            {{update_button}}
+            <i class="bi bi-arrow-clockwise"></i>
+        </button>
+        <span class="m-1"></span>
+        <button (click)="deleteProduct(product)" type="button" class="btn btn-danger">
+            {{delete_button}}
+            <i class="bi bi-trash3-fill"></i>
+        </button>
+    </div>
+</div>

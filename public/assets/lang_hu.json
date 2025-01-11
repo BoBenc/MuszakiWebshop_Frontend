@@ -1,0 +1,24 @@
+{
+    "name": "Műszaki Webshop",
+    "langItems": [
+        {"text": "Magyar", "sign": "hu"},
+        {"text": "English", "sign": "en"}
+    ],
+    "menu": [
+        {"text": "Kezdőlap", "link": "home"},
+        {"text": "Raktárkészlet", "link": "stockpile"}
+    ],
+    "welcome": "Üdvözlöm a Műszaki Webshop oldalán!",
+    "columns": [
+        {"key": "id", "text": "#", "type": "plain"},
+        {"key": "name", "text": "Név", "type": "text"},
+        {"key": "price", "text": "Ár", "type": "number"},
+        {"key": "description", "text": "Leírás", "type": "textarea"},
+        {"key": "category", "text": "Kategória", "type": "text"}
+    ],
+    "operations": "Műveletek",
+    "add_button": "Hozzáadás",
+    "update_button": "Frissítés",
+    "delete_button": "Törlés",
+    "made": "Készítette: BoBenc"
+}

@@ -1,0 +1,14 @@
+.footer {
+    font-size: xx-large;
+    text-align: center;
+}
+
+i {
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+
+i:hover {
+    color: blue;
+}
