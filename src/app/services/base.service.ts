@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class BaseService {
-  firebaseUrl = "https://dolgozat-79584-default-rtdb.europe-west1.firebasedatabase.app/BoBenc_storages"
+  firebaseUrl = "https://dolgozat-79584-default-rtdb.europe-west1.firebasedatabase.app/"
   private productsSubject = new BehaviorSubject([])
 
   constructor(private http:HttpClient) {
